@@ -1,0 +1,6 @@
+class Solution:
+    def missingNumber(self, array: List[int]) -> int:
+        n=len(array)
+        osum=n*(n+1)//2
+        asum=sum(array)
+        return osum-asum
